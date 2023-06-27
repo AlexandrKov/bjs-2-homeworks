@@ -32,7 +32,7 @@
     }
     
     Student.prototype.exclude = function (reason) {
-        this.exclude = reason;
-        delete this.marks;
+        this.excluded = reason;
         delete this.subject;
+        delete this.marks;
       }
